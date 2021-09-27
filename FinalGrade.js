@@ -15,4 +15,5 @@ const finalGrade = (midterm, final, homework) => {
       return 'A';
     }
   }
+  //this is a change
   
