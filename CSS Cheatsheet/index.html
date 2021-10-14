@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style.css' type='text/css' rel='stylesheet' href="https://fonts.googleapis.com/css?family=Andada+Pro">
+    <title>CSS Cheatsheet</title>
+</head>
+<body>
+    <header>
+        <h1 class='title'>Selectors and Visual Rules</h1>
+        <ul class='navbar'>
+            <li>Introduction</li>
+            <li>Selector Chaining</li>
+            <li>CSS Declarations</li>
+        </ul>
+    </header>
+    <div class='introduction text'>
+        <h2>Introduction</h2>
+        <p>CSS, or Cascading Style Sheets, is a language that is used in combination with HTML that customizes how HTML elements will appear. CSS can define styles and change the layout and design of a sheet.</p>
+        <img src="images/illustration.jpeg">
+        <p>CSS code can be written in its own files to keep it separate from the HTML code. The extension for CSS files is .css. These can be linked to an HTML file using a <span>&lt;link&gt;</span> tag in the &lt;head&gt; section.</p>
+        <p>CSS code can be written in an HTML file by enclosing the code in &lt;style&gt; tags. Code surrounded by &lt;style&gt; tags will be interpreted as CSS syntax.</p>
+    </div>
+    <div class='selector-chaining text'>
+        <h2>Selector Chaining</h2>
+        <p>CSS selectors define the set of elements to which a CSS rule set applies. For instance, to select all &lt;p&gt; elements, the p selector can be used to create style rules.</p>
+        <p>CSS selectors can be chained so that rule sets apply only to elements that match all criteria. For instance, to select &lt;h3&gt; elements that also have the section-heading class, the selector h3.section-heading can be used.</p>
+    </div>
+    <div class='css-declarations text'>
+        <h2>CSS Declarations</h2>
+        <p>In CSS, a declaration is a key-value pair of a CSS property and its value. CSS declarations are used to set style properties and construct rules to apply to individual or groups of elements. The property name and value are seperated by a colon, and the entire declaration must be terminated by a semi-colon. See the below table which details a few properties you can use:</p>
+    </div>
+    <div class='table'>
+        <table>
+            <thead>
+                <tr id=table-headings>
+                    <th>property</th>
+                    <th>Explanation</th>
+                    <th>Use case</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class='font-family'>
+                    <td class='code-style'>font-family</td>
+                    <td>This is used to specify the typeface in a rule set. Fonts must be available to the browser to display correctly, either on the computer or linked as a web font. If a font value is not available, browsers will display their default font. When using a multi-word font name, it is best practise to wrap in quotes.</td>
+                    <td class='code-style'>font-family: "Courier New";</td>
+                    <td class='output1'>Hello World</td>
+                </tr>
+                <tr class='font-size'>
+                    <td class='code-style'>font-size</td>
+                    <td>This is used to set text sizes. Font size values can be many different units or types such as pixels.</td>
+                    <td class='code-style'>font-size: 10px;</td>
+                    <td class='output2'>Hello World</td>
+                </tr>
+                <tr class='font-weight'>
+                    <td class='code-style'>font-weight</td>
+                    <td>This can be used to set the weight (boldness) of text. The provided value can be a keyword such as bold or normal.</td>
+                    <td class='code-style'>font-weight: bold;</td>
+                    <td class='output3'>Hello World</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
